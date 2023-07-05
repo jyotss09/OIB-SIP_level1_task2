@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    color: #263238;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #080202;
+    margin: 0;
+
+
+}
+
+.navitems a {
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #F4ABC4;
+}
+
+.navitems a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #595B83;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding-left: 1rem;
+    margin: 0;
+
+
+}
+
+@media only screen and (max-width:600px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 0.5rem;
+    }
+
+    nav li {
+        padding: 0.5rem 0;
+    }
+}
+
+.logo{
+    font-family: 'Damion', cursive;
+    color: #F4ABC4;
+    padding: 0.75rem 1rem;
+}
+.logo:hover{
+    border-radius: 9px;
+    font-family: 'Damion', cursive;
+    background-color: #333456;
+    color: #F4ABC4;
+    padding: 0.75rem 1rem;
+}
+
+
+.container{
+    margin-inline: 100px;
+}
+.double-grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.col{
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+#name{
+    font-size: 64px;
+}
+.resume-btn{
+    margin: 1.5rem 0.5rem;
+    padding: 0.75rem 1rem;
+    width: 30%;
+    border: none;
+    border-radius: 9px;
+    background-color: #060930;
+    color: #F4ABC4;
+    font-weight: 600;
+    cursor: pointer;
+}
+.resume-btn:hover{
+    margin: 1.5rem 0.5rem;
+    padding: 0.75rem 1rem;
+    width: 30%;
+    border: none;
+    border-radius: 9px;
+    background-color: #F4ABC4;
+    color: #060930;
+    font-weight: 600;
+}
+.link-btns{
+    width: 80%;
+    margin-inline: 30px;
+}
+.fa-brands{
+    font-size: 24px;
+    color: #060930;
+}
+.fa-brands:hover{
+    color: #F4ABC4;
+}
+
+#certificate-sect{
+    background-color:rgba(89, 91, 131,0.1);
+    height: 80vh;
+    padding-block: 100px;
+}
+.card-grid{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+.card{
+    width: 18rem;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #060930;
+    color: #F4ABC4;
+    border-radius: 9px;
+}
+.card:hover{
+    background-color: #F4ABC4;
+    color: #060930;
+    transform: scale(1.1);
+    transition: 1000ms;
+}
+#show-more-card:hover{
+    transform: translateX(50px) scale(1.1);
+    /* transform: scale(1.1); */
+    transition: 1000ms;
+}
+.card-title{
+    font-size: 20px;
+    text-align: center;
+}
+footer{
+    background-color: #080202;
+    /* height: 100vh; */
+    padding-block: 100px ;
+}
+.foot {
+    padding-inline: 100px;
+    padding-block: 100px;
+    background-color: #080202;
+    /* height: 800px; */
+
+}
+
+.foot-row {
+    /* margin-top: 50px; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+
+}
+
+#footer-headline {
+    border: 3px solid #fff !important;
+
+}
+
+#footer-headrow {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-top: 10px;
+
+}
+
+.foot-text {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#footer-img {
+    margin-top: 100px;
+}
+
+#footer-nav {
+    background-color: #202020;
+}
+
+#copyright {
+    font-weight: 500;
+    color: #F4ABC4;
+}
+.foot-col{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    /* justify-content: center; */
+    /* align-self: center; */
+}
+#foot-logo{
+    margin-inline: 100px;
+    /* margin-block: 40px; */
+    font-size: 64px;
+}
+.connet-links{
+    margin-inline: 100px;
+}
+
+.connet-links i {
+    margin-top: 20px;
+    color: #F4ABC4;
+}
+.connet-links i:hover{
+    color: #fff;
+}
+.tag-line{
+    margin-inline: 90px;
+    margin-top: 20px;
+    text-align: center;
+    color: #F4ABC4;
+}
+.mail-btn{
+    color: #080202;
+    background-color: #F4ABC4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+    border-radius: 3rem;
+}
+.mail-btn:hover{
+    /* color: #F4ABC4; */
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: 500ms;
+}
