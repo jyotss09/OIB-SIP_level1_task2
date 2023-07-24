@@ -65,6 +65,32 @@ nav li {
     nav li {
         padding: 0.5rem 0;
     }
+
+    #navlinks{
+        display: none;
+    }
+    #navitem-close{
+        display: block;
+    }
+
+    /* .double-grid{
+        display: grid !important;
+        grid-template-columns: 100% !important;
+    } */
+    .container{
+        margin-inline: 0;
+    }
+    canvas{
+        display: none !important;
+    }
+
+}
+/* #myChart{
+    width: 100% !important;
+} */
+
+#navlinks{
+    display: block;
 }
 
 .logo{
@@ -132,7 +158,8 @@ nav li {
 
 #certificate-sect{
     background-color:rgba(89, 91, 131,0.1);
-    height: 80vh;
+    min-height: 100%;
+    overflow: auto;
     padding-block: 100px;
 }
 .card-grid{
@@ -147,6 +174,81 @@ nav li {
     grid-template-columns: repeat(4,1fr);
     row-gap: 30px;
     column-gap: 30px;
+}
+
+
+@media (max-width: 1250px){
+    .card-row{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width: 940px){
+    .card-row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 610px){
+    .card-row{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 1200px;
+    }
+    #sect-head{
+        /* width: 80% !important; */
+        margin-inline: 20px;
+    }
+    #sect-head #container-w-heading{
+        font-size: 20px;
+    }
+    #sect-head #name{
+        font-size: 36px;
+    }
+    .container{
+        margin-block: 100px !important;
+    }
+    .double-grid .contents{
+        height: 100vh !important;
+    }
+    #canva-col{
+        display: none;
+        height: 20px !important;
+    }
+    #certificate-sect{
+        padding-block: 0 !important;
+    }
+    .foot-row {
+        /* margin-top: 50px; */
+        display: grid;
+        grid-template-columns: repeat(1,1fr) !important;
+    
+    
+    }
+    .foot {
+        padding-inline: 10px !important;
+        padding-block: 100px;
+        background-color: #080202;
+        /* height: 800px; */
+    
+    }
+    #foot-logo{
+        margin-inline: 10px !important;
+        /* margin-block: 40px; */
+        font-size: 64px;
+    }
+    .tag-line{
+        margin-inline: 10px !important;
+        /* width: 80%; */
+    }
+    .foot-col{
+        margin-top: 20px;
+        margin-inline: 20px;
+    }
+    .link-btns{
+        display: flex;
+        flex-direction: row;
+    }
 }
 .card{
     width: 18rem;
@@ -270,4 +372,14 @@ footer{
     background-color: #fff;
     transform: scale(1.1);
     transition: 500ms;
+}
+@media screen and (min-width: 600px){
+    #navitem-close{
+        display: none;
+    }
+}
+
+#navitem-close{
+    color: #F4ABC4;
+    
 }

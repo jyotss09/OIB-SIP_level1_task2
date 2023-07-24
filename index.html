@@ -21,22 +21,22 @@
 
     <nav>
 
-        <h3 class="logo">Jyoti Jagdale
+        <h3 class="logo" id="logo">Jyoti Jagdale
 
         </h3>
 
-        <ul class="navlinks">
+        <ul class="navlinks" id="navlinks">
             <li class="navitems">
                 <a href="./index.html" class="nav-active">Home</a>
             </li>
-            <!-- <li class="navitems">
-                <a href="./product.html ">Product</a>
-            </li> -->
             <li class="navitems">
                 <a href="./about.html">About</a>
             </li>
             <li class="navitems">
                 <a href="./contact.html">Contact</a>
+            </li>
+            <li>
+                <p class="navitems" id="navitem-close">Close</p>
             </li>
         </ul>
 
@@ -65,8 +65,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
-                <canvas id="myChart" role="img" area-lable="chart" width="100px" height="100px"></canvas>
+            <div class="col" id="canva-col">
+                <canvas id="myChart" role="img" area-lable="chart" width="100%" height="100%"></canvas>
             </div>
         </div>
 
@@ -75,12 +75,13 @@
 
 
     <!-- certificate section starts  -->
-    <Section id="certificate-sect">
-        <div class="container">
+    <div id="certificate-sect">
+        <div class="container" id="sect-head">
             <div class="contents">
                 <h1 id="container-w-heading">My</h1>
                 <h1 id="name">Certifications</h1>
             </div>
+            <br>
             <div class="card-grid">
                 <div class="card-row">
 
@@ -104,7 +105,9 @@
             </div>
 
         </div>
-    </Section>
+    </div>
+
+    <br>
 
 
 
@@ -184,6 +187,31 @@
     <script src="./vendor/js/chart.js"></script>
     <script src="./assets/js/radar.js"></script>
     <script src="https://kit.fontawesome.com/c760c15b21.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+
+    <script>
+        var logo = document.getElementById("logo");
+        var nav_ul = document.getElementById("navlinks");
+        var navlinks = window.getComputedStyle(nav_ul).getPropertyValue("display");
+        var nav_close = document.getElementById("navitem-close");
+        logo.addEventListener("click", ()=> {
+            if($(window).width() < 601){
+                if(navlinks == "none"){
+                    nav_ul.style.display = "block";
+                }
+                else{
+                    nav_ul.style.display = "none";
+                }
+            }
+        })
+        nav_close.addEventListener("click", ()=>{
+            nav_ul.style.display = "none";
+        })
+
+    </script>
+
 </body>
 
 </html>

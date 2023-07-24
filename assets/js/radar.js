@@ -43,8 +43,8 @@ new Chart(ctx, {
         borderWidth: 3,
       },
     },
-    layout: {
-      padding: 80,
-    },
+    // layout: {
+    //   padding: 80,
+    // },
   },
 });
